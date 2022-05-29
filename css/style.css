@@ -7,26 +7,19 @@
 .fontSanFranciscoBold {
   font-family: 'SanFranciscoText-Bold', Geneva, sans-serif;
 }
-@font-face {
-  font-family: 'SanFranciscoText-Bold';
-  src: url('fonts/SanFranciscoText-Bold.eot');
-  src: url('fonts/SanFranciscoText-Bold.eot?#iefix') format('embedded-opentype'), url('fonts/SanFranciscoText-Bold.svg#SanFranciscoText-Bold') format('svg'), url('fonts/SanFranciscoText-Bold.ttf') format('truetype'), url('fonts/SanFranciscoText-Bold.woff') format('woff'), url('fonts/SanFranciscoText-Bold.woff2') format('woff2');
-  font-weight: normal;
+[class^="fa-"],
+[class*=" fa-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'FontAwesome' !important;
+  speak: none;
   font-style: normal;
-}
-@font-face {
-  font-family: 'SanFranciscoText-Semibold';
-  src: url('fonts/SanFranciscoText-Semibold.eot');
-  src: url('fonts/SanFranciscoText-Semibold.eot?#iefix') format('embedded-opentype'), url('fonts/SanFranciscoText-Semibold.svg#SanFranciscoText-Semibold') format('svg'), url('fonts/SanFranciscoText-Semibold.ttf') format('truetype'), url('fonts/SanFranciscoText-Semibold.woff') format('woff'), url('fonts/SanFranciscoText-Semibold.woff2') format('woff2');
   font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'SanFranciscoText-Regular';
-  src: url('fonts/SanFranciscoText-Regular.eot');
-  src: url('fonts/SanFranciscoText-Regular.eot?#iefix') format('embedded-opentype'), url('fonts/SanFranciscoText-Regular.svg#SanFranciscoText-Regular') format('svg'), url('fonts/SanFranciscoText-Regular.ttf') format('truetype'), url('fonts/SanFranciscoText-Regular.woff') format('woff'), url('fonts/SanFranciscoText-Regular.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 /** RESET AND LAYOUT
 ===================================*/
@@ -192,7 +185,7 @@ textarea {
   -webkit-box-sizing: border-box;
   border: 0;
   background: transparent;
-  font-family: 'SanFranciscoText-Regular', Geneva, sans-serif;
+  font-family: var(--font-PTSans);
 }
 *:focus {
   outline: none;
@@ -213,7 +206,7 @@ textarea {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  font-family: 'SanFranciscoText-Regular', Geneva, sans-serif;
+  font-family: var(--font-PTSans);
   border-radius: 0;
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
@@ -234,7 +227,7 @@ input[type="submit"] {
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
   -webkit-appearance: none;
-  font-family: 'SanFranciscoText-Regular', Geneva, sans-serif;
+  font-family: var(--font-PTSans);
 }
 input::-moz-focus-inner,
 button::-moz-focus-inner {
@@ -273,7 +266,7 @@ body {
   height: 100%;
   overflow-x: hidden;
   -webkit-text-size-adjust: 100%;
-  font-family: 'SanFranciscoText-Regular', Geneva, sans-serif;
+  font-family: var(--font-PTSans);
 }
 b em,
 b i,
@@ -283,7 +276,7 @@ em b,
 i b,
 em strong,
 i strong {
-  font-family: 'SanFranciscoText-Regular', Geneva, sans-serif;
+  font-family: var(--font-PTSans);
 }
 ul,
 li {
@@ -296,7 +289,7 @@ input[type="radio"] {
 h1,
 h2,
 h3 {
-  font-family: 'SanFranciscoText-Semibold', Geneva, sans-serif;
+  font-family: var(--font-AlfaSlabOne);
 }
 img {
   max-width: 100%;
@@ -306,22 +299,22 @@ img {
 }
 /* all */
 ::-webkit-input-placeholder {
-  color: #231F20;
-  font-family: 'SanFranciscoText-Regular', Geneva, sans-serif;
+  color: #000;
+  font-family: var(--font-PTSans);
 }
 ::-moz-placeholder {
-  color: #231F20;
-  font-family: 'SanFranciscoText-Regular', Geneva, sans-serif;
+  color: #000;
+  font-family: var(--font-PTSans);
 }
 /* firefox 19+ */
 :-ms-input-placeholder {
-  color: #231F20;
-  font-family: 'SanFranciscoText-Regular', Geneva, sans-serif;
+  color: #000;
+  font-family: var(--font-PTSans);
 }
 /* ie */
 input:-moz-placeholder {
-  color: #231F20;
-  font-family: 'SanFranciscoText-Regular', Geneva, sans-serif;
+  color: #000;
+  font-family: var(--font-PTSans);
 }
 /* clearfix */
 .clr:before,
@@ -491,4 +484,11 @@ input:-moz-placeholder {
     -o-transform: translateX(0px);
     transform: translateX(0px);
   }
+}
+:root {
+  --font-PTSans: 'PT Sans', sans-serif;
+  --font-AlfaSlabOne: 'Alfa Slab One', sans-serif;
+  --color-gray: #ddd9d1;
+  --color-orange: #f39200;
+  --color-primary: #484848;
 }
