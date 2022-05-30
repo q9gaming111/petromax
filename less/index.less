@@ -3,23 +3,29 @@
 	padding: 30px 0px;
 	.news {
 		&-list {
-			&--wrap {
 
-			}
 		}
-		
 		&-item {
 			margin-bottom: 40px;
 			&:last-of-type {
 				margin-bottom: 0px;
 			}
 			.thumb {
-				margin-bottom: 10px;
+				position: relative;
+				margin-bottom: 15px;
+				overflow: hidden;
 				a {
-					display: inline-block;
+					display: block;
 				}
 				img {
 					display: block;
+					transition: transform 0.3s ease-out;
+				}
+				&:hover {
+					img {
+						transform-origin: center center;
+						transform: scale(1.2);
+					}
 				}
 			}
 			.content {

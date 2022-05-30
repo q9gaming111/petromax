@@ -911,13 +911,20 @@ main {
   margin-bottom: 0px;
 }
 .hot-news .news-item .thumb {
-  margin-bottom: 10px;
+  position: relative;
+  margin-bottom: 15px;
+  overflow: hidden;
 }
 .hot-news .news-item .thumb a {
-  display: inline-block;
+  display: block;
 }
 .hot-news .news-item .thumb img {
   display: block;
+  transition: transform 0.3s ease-out;
+}
+.hot-news .news-item .thumb:hover img {
+  transform-origin: center center;
+  transform: scale(1.2);
 }
 .hot-news .news-item .content h3,
 .hot-news .news-item .content p {
