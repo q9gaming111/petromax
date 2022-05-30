@@ -16,17 +16,29 @@
 </head>
 <body class="">
 	<div class="wrapper">
-		<header>
+		<header class="header">
 			<div class="container">
 				<div class="header-wrap">
-					<div class="logo"></div>
-					<nav class="navigation">
+					<div class="header-logo">
+						<div class="logo-img">
+							<a><img src="../images/logo.png"></a>
+						</div>
+						<div class="bars">
+							<a class="#">
+								<span></span>
+								<span></span>
+								<span></span>
+							</a>
+						</div>
+					</div>
+					<nav class="nav">
 						<div class="nav-wrap">
 							<ul>
-								<li>
+								<li has-nav-sub>
+									<span class="icon-expand"></span>
 									<a href="">PRODUCTS</a>
-									<div class="sub-nav">
-										<div class="sub-nav--wrap">
+									<div class="nav-sub">
+										<div class="nav-sub--wrap">
 											<ul>
 												<li><a href="">Sub Item</a></li>
 												<li><a href="">Sub Item</a></li>
@@ -39,10 +51,11 @@
 								<li><a href="">RETAILER</a></li>
 								<li><a href="">PETROMAX</a></li>
 								<li><a href="">SHOP</a></li>
-								<li>
+								<li has-nav-sub>
+									<span class="icon-expand"></i></span>
 									<a href="">SERVICES</a>
-									<div class="sub-nav">
-										<div class="sub-nav--wrap">
+									<div class="nav-sub">
+										<div class="nav-sub--wrap">
 											<ul>
 												<li><a href="">Sub Item</a></li>
 												<li><a href="">Sub Item</a></li>
@@ -54,9 +67,9 @@
 								</li>
 								<li class="languages">
 									<div class="languages-wrap">
-										<a href=""><img src="../iamges/de.png" alt=""></a>
-										<a href=""><img src="../iamges/en.png" alt=""></a>
-										<a href=""><img src="../iamges/fr.png" alt=""></a>
+										<a href=""><img src="../images/de.png" alt=""></a>
+										<a href=""><img src="../images/en.png" alt=""></a>
+										<a href=""><img src="../images/fr.png" alt=""></a>
 									</div>
 								</li>
 							</ul>
@@ -70,13 +83,15 @@
 
 		</main>
 		<!--end main-->
-		<footer>
+		<footer class="footer">
 			<div class="container">
 				<div class="footer-wrap">
 					<div class="footer-item footer-item--copyright">
 						<div class="footer-item--wrap">
 							<h3>© PETROMAX 2021</h3>
 							<p>Tradition and passion for quality. Based in Germany. Since 1910.</p>
+							<br>
+							<br>
 							<br>
 							<p><a href="">Imprint</a> - <a href="">Privacy Policy</a> - <a href="">Contact</a> - <a href="">Press</a></p>
 						</div>
@@ -120,10 +135,10 @@
 							</div>
 							<div class="socials-network">
 								<ul>
-									<li><a href=""><i class="fa fa-facebook"></i></a></li>
-									<li><a href=""><i class="fa fa-instagram"></i></a></li>
-									<li><a href=""><i class="fa fa-pinterest-p"></i></a></li>
-									<li><a href=""><i class="fa fa-linkedin"></i></a></li>
+									<li class="icon-facebook"><a href=""><i class="fa fa-facebook"></i></a></li>
+									<li class="icon-instagram"><a href=""><i class="fa fa-instagram"></i></a></li>
+									<li class="icon-pinterest"><a href=""><i class="fa fa-pinterest-p"></i></a></li>
+									<li class="icon-linkedin"><a href=""><i class="fa fa-linkedin"></i></a></li>
 								</ul>
 							</div>
 						</div>
