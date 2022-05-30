@@ -545,7 +545,6 @@ input:-moz-placeholder {
   font-size: 14px;
   color: var(--color-primary);
   font-family: var(--font-PTSans);
-  font-weight: bold;
 }
 .header .nav-wrap > ul > li .icon-expand {
   position: absolute;
@@ -653,6 +652,10 @@ input:-moz-placeholder {
     font-size: 18px;
     line-height: 1.15em;
     font-family: var(--font-AlfaSlabOne);
+    transition: color 0.3s ease-out;
+  }
+  .header .nav-wrap > ul > li:hover > a {
+    color: #fff;
   }
   .header .nav-wrap > ul > li:hover .nav-sub {
     display: block;
@@ -871,7 +874,6 @@ main {
 }
 .container {
   padding: 0px 15px;
-  overflow-x: hidden;
 }
 @media (min-width: 1024px) {
   .container {

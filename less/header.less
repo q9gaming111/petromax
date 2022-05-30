@@ -69,7 +69,6 @@
 						font-size: 14px;
 						color: var(--color-primary);
 						font-family: var(--font-PTSans);
-						font-weight: bold;
 					}
 					.icon-expand {
 						position: absolute;
@@ -194,9 +193,13 @@
 							font-size: 18px;
 							line-height: 1.15em;
 							font-family: var(--font-AlfaSlabOne);
+							transition: color 0.3s ease-out;
 							
 						}
 						&:hover {
+							> a {
+								color: #fff;
+							}
 							.nav-sub {
 								display: block;
 								animation: opacity 0.3s ease-out forwards;
