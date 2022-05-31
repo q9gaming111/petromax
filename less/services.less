@@ -1,7 +1,7 @@
 //---------------------------------------BLOGS PAGE STYLE
 .blog-list {
-	margin-bottom: 60px;
-	.section-title {
+	padding: 40px 0px 60px;
+	.dotted-title {
 		margin-bottom: 35px;
 	}
 	.blog-item {
@@ -58,7 +58,7 @@
 }
 @media(min-width: 768px) {
 	.blog-list {
-		margin-bottom: 30px;
+		padding-bottom: 30px;
 		&--wrap {
 			display: flex;
 			justify-content: space-between;
@@ -94,7 +94,7 @@
 //---------------------------------------SERVICES PAGE STYLE
 .services-list {
 	padding: 40px 0px;
-	.section-title {
+	.dotted-title {
 		margin-bottom: 40px;
 	}
 	.link-box {
@@ -102,6 +102,179 @@
 		.content {
 			p {
 				margin-bottom: 20px;
+			}
+		}
+	}
+}
+//---------------------------------------ASK QUESTION PAGE STYLE
+.service-content {
+	.dotted-title {
+		margin-bottom: 30px;
+	}
+	h4 {
+		margin-bottom: 20px;
+		font-size: var(--font-title);
+		color: var(--color-primary);
+		line-height: 1.15em;
+	}
+	p {
+		margin-bottom: 20px;
+		font-size: var(--font-primary);
+		line-height: 1.5em;
+		color: var(--color-primary);
+	}
+	ul {
+		padding-left: 30px;
+		@media(min-width: 768px){
+			padding-left: 40px;
+		}
+		li {
+			margin-bottom: 5px;
+			list-style: disc;
+			font-size: var(--font-primary);
+			line-height: 1.35em;
+			color: var(--color-primary);
+			a {
+				font-size: inherit;
+				color: var(--color-orange);
+			}
+			&:last-of-type {
+				margin-bottom: 0px;
+			}
+		}
+	}
+}
+.quick-help {
+	padding: 25px 0px;
+}
+//---------------------------------------DISCOVER & CARE STYLE
+.top-question {
+	padding-top: 40px;
+}
+.user-manual {
+	margin: 40px 0px 60px;
+	.manual-list {
+		margin-bottom: 60px;
+		h4, p {
+			margin-bottom: 10px;
+		}
+		&--wrap {
+			border-top: 3px solid var(--color-orange);
+			background-color: #f6f6f6;
+			padding: 28px 20px;
+		}
+	}
+	.proper-care {
+		.link-box {
+			p {
+				margin-bottom: 40px;
+			}
+		}
+	}
+	@media(min-width: 1024px){
+		margin-bottom: 100px;
+		&--wrap {
+			display: flex;
+			justify-content: space-between;
+
+		}
+		.manual-list {
+			margin-bottom: 0px;
+			width: calc(~"65% - 23px");
+		}
+		.proper-care {
+			width: calc(~"35% - 23px");
+			.link-box {
+				p {
+					margin-bottom: 50px;
+				}
+			}
+		}
+	}
+}
+//---------------------------------------CONTACT FORM PAGE STYLE
+.contact-form {
+	margin: 40px 0px 50px;
+	&--wrap {
+
+	}
+	.form-wrap {
+		margin-top: 30px;
+	}
+	.form-input {
+		margin-bottom: 25px;
+		p {
+			margin-bottom: 30px;
+		}
+		label {
+			margin-bottom: 10px;
+			display: inline-block;
+			font-size: var(--font-primary);
+			color: var(--color-primary);
+		}
+		input, textarea {
+			display: block;
+			width: 100%;
+			padding: 11px 15px;
+			font-size: var(--font-primary);
+			color: var(--color-primary);
+			line-height: 1.15em;
+			border: 1px solid #d2d2d2;
+			border-radius: 5px;
+		}
+		textarea {
+			min-height: 80px;
+		}
+		.custom-input {
+			position: relative;
+			input[type="checkbox"] {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: auto;
+			}
+			label {
+				display: block;
+				margin-bottom: 0px;
+				padding-left: 25px;
+				line-height: 1.35em;
+			}
+		}
+		button {
+			display: inline-block;
+			padding: 13px 29px;
+			font-size: var(--font-primary);
+			color: var(--font-primary);
+			background-color: #ddd9d1;
+			transition: color 0.3s ease-out;
+			font-weight: bold;
+			&:hover {
+				color: #fff;
+			}
+		}
+	}
+	.button-form {
+		margin-top: 50px;
+	}
+	@media(min-width: 768px){
+		.form-input {
+			margin-bottom: 35px;
+		}
+		.group-seperate {
+			display: flex;
+			justify-content: space-between;
+			.form-input {
+				width: calc(~"50% - 15px");
+			}
+		}
+	}
+}
+.customer-service {
+	margin-bottom: 100px;
+	.link-box {
+		.content {
+			&-wrap {
+				padding-bottom: 50px;
 			}
 		}
 	}

@@ -230,7 +230,7 @@
 	}
 }
 .insta-embed {
-	.section-title {
+	.dotted-title {
 		.fa-instagram {
 			display: block;
 			font-size: 50px;
@@ -282,13 +282,20 @@
 				}
 			}
 		}
-		h4, p {
+		h4, p, address {
 			margin-bottom: 15px;
 			font-size: var(--font-primary);
 			color: var(--color-primary);
 			line-height: 1.35em;
+			font-style: normal;
 			&:last-child {
 				margin-bottom: 0px;
+			}
+		}
+		address {
+			a {
+				color: inherit;
+				font-size: inherit;
 			}
 		}
 		.read-more {
