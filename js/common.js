@@ -1,3 +1,15 @@
+const initBannerSlider = function(){
+	const $bannerSlider = $('.banner-slider .slider');
+	const sliderSetting = {
+		fade: true,
+		arrows: false,
+		autoplay: true,
+		autoplaySpeed: 2500,
+		cssEase: 'linear'
+	}
+
+	$bannerSlider.length > 0 && $bannerSlider.slick(sliderSetting);
+}
 const handCollapseItem = function(){
 	const collapseBtn = $('[collapse-content] [collapse-btn]');
 
@@ -35,6 +47,7 @@ const initial = function() {
 	// excute function here
 	handleNavEvent();
 	handCollapseItem();
+	initBannerSlider();
 }
 
 document.addEventListener('DOMContentLoaded', function(){
