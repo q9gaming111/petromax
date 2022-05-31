@@ -665,7 +665,7 @@ input:-moz-placeholder {
     display: block;
     animation: opacity 0.3s ease-out forwards;
   }
-  .header .nav-wrap > ul > li.active a {
+  .header .nav-wrap > ul > li.active > a {
     color: #fff;
   }
   .header .nav-wrap > ul > li.languages {
@@ -1132,6 +1132,12 @@ body {
 }
 .story {
   padding: 40px 0px;
+}
+.link-box {
+  margin-bottom: 50px;
+}
+.link-box:last-of-type {
+  margin-bottom: 0px;
 }
 .link-box .content-wrap {
   padding: 35px;
