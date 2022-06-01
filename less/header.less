@@ -87,8 +87,36 @@
 					}
 					&[has-nav-sub="open"] {
 						.nav-sub {
-							display: block;
-							animation: show 0.5s ease-out forwards;
+							li {
+								display: block;
+								animation: swipeX 0.45s ease-out forwards;
+							}
+							li {
+								&:nth-child(1) {
+									animation-delay: 0.2s;
+								}
+								&:nth-child(2) {
+									animation-delay: 0.25s;
+								}
+								&:nth-child(3) {
+									animation-delay: 0.3s;
+								}
+								&:nth-child(4) {
+									animation-delay: 0.35s;
+								}
+								&:nth-child(5) {
+									animation-delay: 0.4s;
+								}
+								&:nth-child(6) {
+									animation-delay: 0.45s;
+								}
+								&:nth-child(7) {
+									animation-delay: 0.5s;
+								}
+								&:nth-child(8) {
+									animation-delay: 0.55s;
+								}
+							}
 						}
 						.icon-expand {
 							&::before {
@@ -116,11 +144,12 @@
 				}
 			}
 			.nav-sub {
-				display: none;
 				ul {
 					li {
 						border-top: 1px solid var(--color-gray);
 						padding: 0px 15px;
+						display: none;
+						opacity: 0;
 						a {
 							display: block;
 							padding: 15px;
