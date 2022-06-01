@@ -1,6 +1,6 @@
 //---------------------------------------BLOGS PAGE STYLE
 .blog-list {
-	padding: 40px 0px 60px;
+	padding-bottom: 60px;
 	.dotted-title {
 		margin-bottom: 35px;
 	}
@@ -58,7 +58,7 @@
 }
 @media(min-width: 768px) {
 	.blog-list {
-		padding-bottom: 30px;
+		padding-bottom: 0;
 		&--wrap {
 			display: flex;
 			justify-content: space-between;
@@ -69,12 +69,14 @@
 		}
 	}
 	.legacy {
+		margin-bottom: 30px;
 		&-wrap {
 			display: flex;
 			justify-content: space-between;
 			flex-wrap: wrap;
 		}
 		&-item {
+			margin-bottom: 0px;
 			width: calc(~"50% - 10px");
 		}
 	}
@@ -93,7 +95,6 @@
 }
 //---------------------------------------SERVICES PAGE STYLE
 .services-list {
-	padding: 40px 0px;
 	.dotted-title {
 		margin-bottom: 40px;
 	}
@@ -144,15 +145,10 @@
 		}
 	}
 }
-.quick-help {
-	padding: 25px 0px;
-}
 //---------------------------------------DISCOVER & CARE STYLE
-.top-question {
-	padding-top: 40px;
-}
 .user-manual {
-	margin: 40px 0px 60px;
+	padding-top: 0px;
+	margin-bottom: 60px;
 	.manual-list {
 		margin-bottom: 60px;
 		h4, p {
@@ -194,10 +190,6 @@
 }
 //---------------------------------------CONTACT FORM PAGE STYLE
 .contact-form {
-	margin: 40px 0px 50px;
-	&--wrap {
-
-	}
 	.form-wrap {
 		margin-top: 30px;
 	}
@@ -254,7 +246,7 @@
 		}
 	}
 	.button-form {
-		margin-top: 50px;
+		padding-top: 5px;
 	}
 	@media(min-width: 768px){
 		.form-input {
